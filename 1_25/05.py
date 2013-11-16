@@ -3,7 +3,6 @@
 
 # What is the smallest positive number that is evenly divisible by all 
 # of the numbers from 1 to 20?
-import numpy as np
 
 n = 20
 i = 20
@@ -14,3 +13,4 @@ while i > 10:
         i = 20
         n += 20
 print n
+
