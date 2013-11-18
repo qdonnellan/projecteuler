@@ -5,12 +5,12 @@
 import numpy as np
 
 n = 2000000
-p = np.arange(2,n)
-i = 2
+p = np.arange(3,n,2)
+i = 3
 while i*i < n:
     r = np.mod(p, i) > 0 # array of all remainders not 0
     p = r*p + p*(p == i) # array of all evenly divisible number not "i"
     p = p[p != 0] # remove all non primes divisible by i
-    i += 1
+    i += 2
 
-print sum(p)
+print sum(p)+2
