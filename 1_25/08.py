@@ -24,10 +24,10 @@ n = '''
 71636269561882670428252483600823257530420752963450
 '''
 n = "".join(n.split())
-max = 0
+m = 0
 for i in range(len(n)-4):
     p = int(n[i])*int(n[i+1])*int(n[i+2])*int(n[i+3])*int(n[i+4])
-    if p > max:
-        max = p
-print max
+    if p > m:
+        m = p
+print m
 
