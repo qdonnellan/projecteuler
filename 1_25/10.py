@@ -2,17 +2,15 @@
 
 # Find the sum of all the primes below two million.
 
-# I'm using my solution to problem #7 to help me here
+import numpy as np
 
+n = 2000000
+primes = np.arange(2,n)
+i = 2
+while i*i < n:
+    r = np.mod(primes, i) > 0
+    primes = r*primes + primes*(primes == i)
+    primes = primes[primes != 0]
+    i += 1
 
-n = 5
-the_sum = n
-while n < 2000000:
-    s = 3
-    n += 2
-    while n % s != 0 and s*s < n: # only check until s*s < n
-        s += 2
-    if s*s > n: # if n is prime to s*s > n, it will be prime
-        the_sum += n
-    
-print the_sum
+print sum(primes)
