@@ -7,9 +7,9 @@ n = 1
 while i <=  10001:
     s = 2
     n += 1
-    while n % s != 0:
+    while n % s != 0 and s*s < n:
         s += 1
-    if s == n:
+    if s*s > n:
         i += 1
     
 print n
