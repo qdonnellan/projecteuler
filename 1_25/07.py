@@ -2,16 +2,17 @@
 # we can see that the 6th prime is 13.
 
 # What is the 10001st prime number?
-import numpy as np
-
 i = 1
-n = 2
-while i < 2:
-    f = n + 1
-    while f % n != 0:
-        print f, n
-        n += 1
-    i += 1
-
+n = 1
+while i <=  10001:
+    s = 2
+    n += 1
+    while n % s != 0:
+        s += 1
+    if s == n:
+        i += 1
+    
 print n
-   
+        
+        
+        
