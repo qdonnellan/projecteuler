@@ -36,7 +36,7 @@ n = n.strip('\n')
 n = re.sub('\n', ' ', n)
 n = n.split(' ')
 n = [int(i) for i in n]
-square = 4
+
 
 def maxp_cols_rows(m):
     p = 0
