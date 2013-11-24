@@ -20,16 +20,10 @@
 #  five hundred divisors?
 import numpy as np
 
-i = 3
-n = 1
-num_factors = 1
-while num_factors < 500:
-    n = sum(range(1,i))
-    upper_limit = int((n+1)**0.5)
-    possible_factors = range(1,upper_limit)
-    r = np.mod(n,possible_factors) #the remainder array
-    num_factors = len(r[r == 0]) #remainders of 0 indicate a factor
+i, n = 1, 1
+while n < 50:
+    n = i*(i+1)/2
     i += 1
-
+    print n
 print n
 
