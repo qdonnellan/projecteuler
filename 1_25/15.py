@@ -10,4 +10,6 @@ for i in range(4):
     print s
     print i, j
 
+# NOT COMPLETE!!!!!
+
 
