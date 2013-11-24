@@ -35,7 +35,7 @@ def num_factors(n):
            
 f, i = 1, 1
 while f < 500:
-    n = i*(i+1)/2
+    n = i*(i+1)/2 # n is each new triagnular number
     f = num_factors(n)
     i += 1
 
