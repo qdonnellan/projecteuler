@@ -3,13 +3,14 @@
 # there are exactly 6 routes to the bottom right corner.
 
 # How many such routes are there through a 20x20 grid?
-s = 0
-for i in range(4):
-  for j in range(i+1):
-    s += i+j
-    print s
-    print i, j
 
-# NOT COMPLETE!!!!!
+n, c = 40, 1
+row = [c]
+for k in range(1,n+1):
+  c = c*(n+1-k)/k
+  row.append(c)
 
+print max(row)
 
+# I used Pascal's triangle, calculating only the row needed (see the 
+# wikipedia article and scroll down to calculating a row by itself)
