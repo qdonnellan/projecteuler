@@ -18,12 +18,27 @@
 
 # What is the value of the first triangle number to have over
 #  five hundred divisors?
-import numpy as np
 
-i, n = 1, 1
-while n < 50:
+def num_factors(n):
+    # calculates number of factors using prime factorization
+    factors = 1
+    i = 2
+    while n != 1:
+        e = 0
+        while n % i == 0:
+            n = n/i
+            e += 1
+        factors = factors*(e+1)
+        i += 1
+    return factors
+
+           
+f, i = 1, 1
+while f < 500:
     n = i*(i+1)/2
+    f = num_factors(n)
     i += 1
-    print n
+
 print n
+
 
