@@ -9,10 +9,10 @@ def longest_recurring_cycle(limit):
     max_cycle = 1
     max_cycle_d = 3
     for n in range (limit, 3, -1):
-    length = cycle_length(n)
-    if length and length > max_cycle:
-        max_cycle = length
-        max_cycle_d = n
+        length = cycle_length(n)
+        if length and length > max_cycle:
+            max_cycle = length
+            max_cycle_d = n
     return max_cycle, max_cycle_d
 
 def assert_prime_number(n):
@@ -32,13 +32,13 @@ def cycle_length(n):
     determine the cycle length of n or False if n is not prime
     '''
     if assert_prime_number(n) and n%2 != 0 and n%5 != 0:
-    count = 1
-    r = 10 % n
-    while r != 1:
-        r = r * 10 % n
-        count += 1
-    return count
+        count = 1
+        r = 10 % n
+        while r != 1:
+            r = r * 10 % n
+            count += 1
+        return count
     else:
-    return False
+        return False
 
 
