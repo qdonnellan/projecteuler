@@ -17,3 +17,18 @@ def largest_palindrome(n_digit):
                     n = a*b #we have a new winner!
 
     return n
+
+
+    """
+    Note:
+
+    there is probably a better way to do this which is more
+    efficient: Start with the product of two numbers that
+    is guaranteed to be largest (for 3 digit numbers that is:
+    999 x 999). Then, work your way down a chain of products
+    such that the result of each subsequent product is
+    guaranteed to be larger than every product yet to be
+    computed. In this way, you could stop as soon as you detected
+    the first palindrome instead of continuing on through
+    useless products all the way down to 100x100
+    """
