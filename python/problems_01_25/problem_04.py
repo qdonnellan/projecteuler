@@ -1,13 +1,19 @@
-# A palindromic number reads the same both ways. 
-# The largest palindrome made from the product of two 2-digit numbers is 
-# 9009 = 91 x 99.
+def largest_palindrome(n_digit):
+    """
+    return the largest palindrome which is the product
+    of 2 n_digit numbers
 
-# Find the largest palindrome made from the product of two 3-digit numbers.
+    it is worth noting that the very useful extended slice [::-1]
+    is used here to reverse the string, you should use it too!
+    """
+    n = 1
+    lower_limit = 10**(n_digit-1)
+    upper_limit = 10**(n_digit)
 
-n = 1
-for a in range(100,1000):
-    for b in range(100,1000):
-        if str(a*b)[::-1] == str(a*b): #check if palindrome
-            if a*b > n: # check if larger than current palindrome
-                n = a*b
-print n
+    for a in range(lower_limit,upper_limit):
+        for b in range(lower_limit,upper_limit):
+            if str(a*b)[::-1] == str(a*b): #is palindrome?
+                if a*b > n: #is this larger that the current?
+                    n = a*b #we have a new winner!
+
+    return n
