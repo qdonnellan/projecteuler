@@ -1,16 +1,9 @@
-#The sum of the squares of the first ten natural numbers is,
-# 1^2 + 2^2 + ... + 10^2 = 385
-
-#The square of the sum of the first ten natural numbers is,
-#(1 + 2 + ... + 10)^2 = 552 = 3025
-
-# Hence the difference between the sum of the squares of the first 
-# ten natural numbers and the square of the sum is 3025 - 385 = 2640.
-
-# Find the difference between the sum of the squares of the first 
-# one hundred natural numbers and the square of the sum.
-
-import numpy as np
-
-a = np.arange(1,101)
-print (sum(a))**2 - sum(a**2) 
+def sum_squared_less_squared_sum(first_n):
+    """
+    return the result: A - B
+    where A is the square of the sum of all first_n ints
+    and B is the sum of the suquare of all first_n ints
+    """
+    A = sum(range(1,first_n+1))**2
+    B = sum([x**2 for x in range(1, first_n+1)])
+    return A-B
