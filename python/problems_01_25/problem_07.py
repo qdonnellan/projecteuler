@@ -1,19 +1,18 @@
-# By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, 
-# we can see that the 6th prime is 13.
+def nth_prime(nth):
+    """
+    return the nth prime number
 
-# What is the 10001st prime number?
+    For Example: nth_prime(4) returns 7:
+    2, 3, 5, [7]
+    """
+    known_primes = 0
+    candidate = 1
+    while known_primes < nth:
+        d = 2 # d is a current divisor
+        candidate += 1
+        while (candidate % d != 0) and (d*d < candidate):
+            d += 1
+        if d*d > candidate:
+            known_primes += 1 # we've found another prime!
 
-i = 1
-n = 1
-while i <=  10001:
-    s = 2
-    n += 1
-    while n % s != 0 and s*s < n: # only check until s*s < n
-        s += 1
-    if s*s > n: # if n is prime to s*s > n, it will be prime
-        i += 1
-    
-print n
-        
-        
-        
+    return candidate
