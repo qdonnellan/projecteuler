@@ -12,8 +12,8 @@ def largest_palindrome(n_digit):
 
     for a in range(lower_limit,upper_limit):
         for b in range(lower_limit,upper_limit):
-            if str(a*b)[::-1] == str(a*b): #is palindrome?
-                if a*b > n: #is this larger that the current?
+            if a*b > n: #if the product is larger, forget it!
+                if str(a*b)[::-1] == str(a*b): #is palindrome?
                     n = a*b #we have a new winner!
 
     return n
