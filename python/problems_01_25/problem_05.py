@@ -1,6 +1,6 @@
 def natural_num_division_streak(max_N):
     """
-    return the largest number perfectly divisivbly by each
+    return the smallest number perfectly divisivbly by each
     of the natural numbers 1..max_N
     """
 
