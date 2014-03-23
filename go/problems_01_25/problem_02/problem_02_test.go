@@ -21,7 +21,7 @@ func TestProblem02CaseWhereLimitIs100(t *testing.T) {
     result := SumEvenFibTerms(100)
     if result != 44 {
         t.Error(fmt.Sprintf(
-            "The sum should be 44, recieved %d instead",
+            "The sum should be 44, received %d instead",
             result,
             ))
     }
