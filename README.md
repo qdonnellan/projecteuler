@@ -1,6 +1,6 @@
 # projecteuler
 
-These are my implementations of the [Project Euler](http://projecteuler.net/) problems is a few different languages. My goal for the immediate future is to present solutions for the first 25 problems in **Python**, **Go** and **Javascript**. 
+These are my implementations of the [Project Euler](http://projecteuler.net/) problems is a few different languages. My goal for the immediate future is to present implementations for the first 25 problems in **Python**, **Go** and **Javascript**. 
 
 ## Why Project Euler?
 As it turns out, project euler problems are a great place for a beginner to learn how to code in a new language *while simultaneously learning test driven development*. Take a look at PE's first problem statement:
