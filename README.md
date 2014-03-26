@@ -13,7 +13,7 @@ As it turns out, project euler problems are a great place for a beginner to lear
 Did they just give me a test case before a problem statement? **Yes they did**, and I think that is awesome. 
 
 ## What I am doing
-For each problem on Project Euler, I first look at the test case (and, by the way, every problem euler problem I have come across lists an easy to verify test case). Then I write a test case for that problem **before I write a solution**. For example, the first thing I will write for problem 1 will be this (if I'm doing it in Python)
+For each problem on Project Euler, I first look at the test case (and, by the way, every project euler problem I have come across lists an easy to verify test case). Then I write a test case for that problem **before I write a solution**. For example, the first thing I will write for problem 1 will be this (if I'm doing it in Python)
 
     import unittest
     from problem_01 import sum_three_five
