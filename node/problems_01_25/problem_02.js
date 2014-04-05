@@ -9,8 +9,7 @@ function EvenFibSum(limit) {
         if (b % 2 == 0) {
             sum += b;
         }
-        // a + b evaluates, then a is set to b (a+b) then the value of
-        // the first element (a + b) is returned and set to b
+        // this is a cool way of setting (b -> a+b) and (a -> b)
         b = [a + b, a = b][0];
     };
     return sum;
