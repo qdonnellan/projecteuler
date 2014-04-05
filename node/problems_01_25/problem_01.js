@@ -1,4 +1,4 @@
-// return the sume of all numbers less than the limit which are
+// return the sum of all numbers less than the limit which are
 // multiples of three or five
 function SumThreeFive(limit) {
     var sum = 0;
