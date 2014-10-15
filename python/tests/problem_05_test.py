@@ -1,4 +1,4 @@
-from problems_01_25.problem_05 import natural_num_division_streak
+from problems.problems_01_25.problem_05 import natural_num_division_streak
 import unittest
 
 class Problem05Test(unittest.TestCase):

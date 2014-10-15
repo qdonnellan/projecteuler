@@ -1,4 +1,4 @@
-from problems_01_25.problem_04 import  largest_palindrome
+from problems.problems_01_25.problem_04 import  largest_palindrome
 import unittest
 
 class Problem04Test(unittest.TestCase):

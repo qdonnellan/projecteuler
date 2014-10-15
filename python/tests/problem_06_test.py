@@ -1,4 +1,4 @@
-from problems_01_25.problem_06 import sum_squared_less_squared_sum
+from problems.problems_01_25.problem_06 import sum_squared_less_squared_sum
 import unittest
 
 class Problem06Test(unittest.TestCase):

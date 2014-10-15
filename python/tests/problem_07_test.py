@@ -1,4 +1,4 @@
-from problems_01_25.problem_07 import nth_prime
+from problems.problems_01_25.problem_07 import nth_prime
 import unittest
 
 class Problem07Test(unittest.TestCase):

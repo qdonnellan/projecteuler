@@ -1,4 +1,4 @@
-from problems_01_25.problem_03 import largest_prime_factor
+from problems.problems_01_25.problem_03 import largest_prime_factor
 import unittest
 
 class Problem03Test(unittest.TestCase):

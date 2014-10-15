@@ -1,4 +1,4 @@
-from problems_01_25.problem_02 import even_fibsum
+from problems.problems_01_25.problem_02 import even_fibsum
 import unittest
 
 class Problem02Test(unittest.TestCase):
