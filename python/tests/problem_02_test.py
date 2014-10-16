@@ -1,4 +1,4 @@
-from problems.problems_01_25.problem_02 import even_fibsum
+from problems.problems_01_25.problem_02 import Problem02
 import unittest
 
 class Problem02Test(unittest.TestCase):
@@ -14,4 +14,7 @@ class Problem02Test(unittest.TestCase):
         in the Fibbonacci series that are even, their
         sum is 10
         """
-        self.assertEqual(even_fibsum(20), 10)
+        problem = Problem02()
+        problem.limit = 20
+        problem.solve_problem()
+        self.assertEqual(problem.solution, 10)
