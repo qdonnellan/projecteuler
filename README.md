@@ -1,5 +1,7 @@
 # projecteuler
 
+*Note: I am currrently refactoring this project to reflect what I've leared from reading Robert Martin's "Clean Code"*
+
 These are my implementations of the [Project Euler](http://projecteuler.net/) problems is a few different languages. My goal for the immediate future is to present implementations for the first 25 problems in **Python**, **Go** and **Javascript**. 
 
 ## Why Project Euler?
