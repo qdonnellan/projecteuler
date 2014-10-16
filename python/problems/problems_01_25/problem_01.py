@@ -7,6 +7,11 @@ class Problem01:
 
     limit = 0
     known_multiples = []
+    solution = None
+
+    def solve_problem(self):
+        self.find_multiples_of_3_or_5_less_than_limit()
+        self.solution = self.sum_multiples()
 
     def find_multiples_of_3_or_5_less_than_limit(self):
         for candidate in range(1, self.limit):
