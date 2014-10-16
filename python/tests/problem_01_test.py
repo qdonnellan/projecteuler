@@ -2,9 +2,6 @@ from problems.problems_01_25.problem_01 import Problem01
 import unittest
 
 class Problem01Test(unittest.TestCase):
-    """
-    test the implementation of problem one and associated functions
-    """
 
     def test_numbers_less_than_equal_to_ten(self):
         problem = Problem01()
